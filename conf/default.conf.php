@@ -174,12 +174,12 @@ return array(
   'mysql.user' => $_ENV['MYSQL_USER'],
 
   // The password to use when connecting to MySQL.
-  'mysql.pass' => $mysql['MYSQL_PASS'],
+  'mysql.pass' => $_ENV['MYSQL_PASS'],
 
   // The MySQL server to connect to. If you want to connect to a different
   // port than the default (which is 3306), specify it in the hostname
   // (e.g., db.example.com:1234).
-  'mysql.host' => $mysql['MYSQL_HOST'],
+  'mysql.host' => $_ENV['MYSQL_HOST'],
 
   // The number of times to try reconnecting to the MySQL database
   'mysql.connection-retries' => 3,
