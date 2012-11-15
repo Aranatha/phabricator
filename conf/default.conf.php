@@ -1,5 +1,7 @@
 <?php
 
+var_dump($_ENV);
+
 return array(
 
   // The root URI which Phabricator is installed on.
