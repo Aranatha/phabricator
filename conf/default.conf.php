@@ -37,7 +37,7 @@ return array(
   // Default key for HMAC digests where the key is not important (i.e., the
   // hash itself is secret). You can change this if you want (to any other
   // string), but doing so will break existing sessions and CSRF tokens.
-  'security.hmac-key' => '[D\t~Y7eNmnQGJ;rnH6aF;m2!vJ8@v8C=Cs:aQS\.Qw',
+  'security.hmac-key' => $_ENV['SECURITY_HMAC_KEY'],
 
   // If the web server responds to both HTTP and HTTPS requests but you want
   // users to connect with only HTTPS, you can set this to true to make
@@ -169,15 +169,15 @@ return array(
   'mysql.configuration-provider' => 'DefaultDatabaseConfigurationProvider',
 
   // The username to use when connecting to MySQL.
-  'mysql.user' => 'root',
+  'mysql.user' => $_ENV['MYSQL_USER'],
 
   // The password to use when connecting to MySQL.
-  'mysql.pass' => '',
+  'mysql.pass' => $mysql['MYSQL_PASS'],
 
   // The MySQL server to connect to. If you want to connect to a different
   // port than the default (which is 3306), specify it in the hostname
   // (e.g., db.example.com:1234).
-  'mysql.host' => 'localhost',
+  'mysql.host' => $mysql['MYSQL_HOST'],
 
   // The number of times to try reconnecting to the MySQL database
   'mysql.connection-retries' => 3,
