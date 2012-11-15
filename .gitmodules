@@ -4,3 +4,6 @@
 [submodule "externals/libphutil"]
 	path = externals/libphutil
 	url = git://github.com/facebook/libphutil.git
+[submodule "externals/arcanist"]
+	path = externals/arcanist
+	url = git://github.com/facebook/arcanist.git
