@@ -2,5 +2,5 @@
 	path = externals/javelin
 	url = git://github.com/facebook/javelin.git
 [submodule "externals/libphutil"]
-    path = externals/libphutil
-    url = git://github.com/facebook/libphutil.git
+	path = externals/libphutil
+	url = git://github.com/facebook/libphutil.git
