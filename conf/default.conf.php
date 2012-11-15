@@ -4,7 +4,7 @@ return array(
 
   // The root URI which Phabricator is installed on.
   // Example: "http://phabricator.example.com/"
-  'phabricator.base-uri'        => 'test',
+  'phabricator.base-uri'        => $_ENV['PHABRICATOR_BASE_URI'],
 
   // If you have multiple environments, provide the production environment URI
   // here so that emails, etc., generated in development/sandbox environments
