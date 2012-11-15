@@ -1,7 +1,7 @@
 <?php
 
 return array(
-
+    'phabricator.setup' => true,
   'darkconsole.enabled'             => true,
   'celerity.force-disk-reads'       => true,
   'phabricator.show-stack-traces'   => true,
